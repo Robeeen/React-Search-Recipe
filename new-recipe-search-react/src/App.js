@@ -41,6 +41,7 @@ const App = () => {
           <input type="text" className="search-input" value={search} onChange={updateSearch}/>
           <button className='search-button' type='submit'>Search</button>
         </form> 
+        <div>
         {
           recipe.map(recipe =>(
             <Receipe 
@@ -53,7 +54,8 @@ const App = () => {
               images={recipe.recipe.image}             
             />
           ))
-        }       
+        }  
+        </div>     
       </div>      
     </main>
   );
