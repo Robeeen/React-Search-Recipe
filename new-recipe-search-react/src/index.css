@@ -70,10 +70,7 @@ body {
 }
 .card {
   height: 100%;
-  display: block;
-  flexDirections: column;
-  background: #f7f7f7;
-  justify-content: space-around;
+  background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);; 
   border-radius: 10px;
   padding: 20px;
   flex-wrap: wrap;
@@ -109,6 +106,8 @@ h4 {
 p {
   margin-bottom: 1.25rem;
   color: var(--clr-grey-5);
+  text-align: center;
+  font-size: small;
 }
 .underline {
   height: 0.05rem;
@@ -137,6 +136,7 @@ p {
   h3,
   h4 {
     line-height: 1;
+    text-align: center;
   }
 }
 /*  global classes */
@@ -187,8 +187,6 @@ main {
   justify-content: center;
   align-items: center;
 }
-
-
 .question {
   padding: 1rem 1.5rem;
   border: 2px solid var(--clr-grey-special);
@@ -196,6 +194,7 @@ main {
   border-radius: var(--radius);
   box-shadow: var(--light-shadow);
   display: flex;
+  justify-content: space-around;
 }
 .question h4 {
   text-transform: none;
@@ -228,4 +227,11 @@ main {
 .newimage{
   margin: 10px;
   right: 0;
+}
+
+.search-button{
+  border: none;
+  background: lightcoral;
+  padding: 10px 20px;
+  color: white;
 }

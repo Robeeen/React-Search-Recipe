@@ -36,11 +36,13 @@ const App = () => {
   return (
     <main>    
       <div className='App'>
-        <h4>Type the Recipe from API </h4>
+        <div className='card'>
+        <h4>Type your desired Recipe and click Search</h4>
         <form onSubmit={getSearch} className='search-form'>
-          <input type="text" className="search-input" value={search} onChange={updateSearch}/>
+          <input type="text" className="search-bar" value={search} onChange={updateSearch}/>
           <button className='search-button' type='submit'>Search</button>
         </form> 
+        </div>
         <div>
         {
           recipe.map(recipe =>(
