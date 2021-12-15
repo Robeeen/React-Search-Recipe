@@ -138,7 +138,11 @@ p {
     line-height: 1;
     text-align: center;
   }
+ 
 }
+h5 {
+  text-align: content;
+  }
 /*  global classes */
 
 /* section */
@@ -234,4 +238,10 @@ main {
   background: lightcoral;
   padding: 10px 20px;
   color: white;
+}
+.left {
+  display: block;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 600px;
 }

@@ -7,14 +7,16 @@ const Receipe = ({titles, caloriess, weights, images, ctype, ingredis}) => {
             <p>Calories: {caloriess} - Total Weight: {weights}</p>
             <div className='question'>
                 <div className='left'>
-            <ul>
-                {ingredis.map(ingredi => (
-                    <li>-{ingredi.text}</li>
-                ))}
-                </ul>  </div>
+                    <h5>Ingredients:</h5>
+                    <ul>
+                        {ingredis.map(ingredi => (
+                            <li>-{ingredi.text}</li>
+                        ))}
+                    </ul>  
+                </div>
                 <div>
-            <img src={images} alt={''} className='newimage'/>
-            </div>
+                    <img src={images} alt={''} className='newimage'/>
+                </div>
             </div>
         </div>
     )
