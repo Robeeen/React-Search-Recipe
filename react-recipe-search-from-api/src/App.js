@@ -4,7 +4,7 @@ import Receipe from './Receipe';
 
 const App = () => {
 
-  const API_KEY='eb7804bb092594d4f6e96efe84a20df5';
+  const API_KEY='';
   const APP_ID='1a50de60';
   const myReuest=`https://api.edamam.com/search?q=chiken&app_id=${APP_ID}&app_key=${API_KEY}`;
 
